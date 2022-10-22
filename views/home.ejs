@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title %>
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="text-align: center;">To-Do List</h1>
+            <label for="DESCRIPTION" class="form-label">DESCRIPTION</label>
+            <input class="form-control form-control-lg" type="text" placeholder="What do you need to do?" aria-label=".form-control-lg example">
+            <br>
+            <div class="d-flex flex-row mb-1">
+                <div class="p-1 flex-fill">
+                    <div>
+                        <label for="CATEGORY" class="form-label">CATEGORY</label>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose a category</option>
+                        <option value="1">Personal</option>
+                        <option value="2">Work</option>
+                        <option value="3">College</option>
+                        <option value="4">Cleaning</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
+                <div class="p-1 flex-fill">
+                    <div>
+                        <label for="due date" class="form-label">DUE DATE</label>
+                    </div>
+                    <input type="date" class="form-select" id="due date" name="due date">
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center; margin-left: 2.25%;">
+                <button type="button" class="btn btn-primary btn-lg" style="background-color: black;">ADD TASK</button>
+                <button type="button" class="btn btn-secondary btn-lg" style="background-color: red">DELETE TASK</button>
+            </div>
+            <br>
+            <div class="list-group">
+                <ul class="list-group">
+                    
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" style="margin-top: 1%;">
+                        <label class="form-check-label" for="firstCheckbox"  class="d-flex flex-row mb-1">
+                            <div class="p-1 flex-fill">First checkbox &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button type="button" class="btn btn-secondary btn-sm" style="background-color: red;">DELETE TASK</button>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                      <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                      <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                    </li>
+                  </ul>
+                <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+            
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+            </div>
+        </div>
+    </body>
+</html>
