@@ -1,7 +1,5 @@
 module.exports.remove = function(req, res){ 
     const Task = require('../models/tasks');
-    // const checkedItemId = req.body.checkbox;
-    // console.log(checkedItemId);
 
     var removeList = req.body.check;
     console.log(removeList);
@@ -27,10 +25,4 @@ module.exports.remove = function(req, res){
         }
     }
     return res.redirect('/');
-    // Task.findByIdAndDelete(checkedItemId , function(err) {
-    //     if (!err) {
-    //         console.log("Successfully deleted the Id");
-    //     }
-    //     res.redirect("/");
-    // });
 };
